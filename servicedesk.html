@@ -25,6 +25,30 @@
             hr.divider {
                 background-color: white;
             }
+
+            .legend-container {
+                margin-top: 20px;
+            }
+
+            .legend-list {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .legend-list li {
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+            }
+
+            .legend-color {
+                width: 20px;
+                height: 20px;
+                display: block;
+                margin-right: 10px;
+                border: 1px solid #000000; /* Optional, fügt einen Rand um die Farbblöcke hinzu */
+            }
+
         </style>
 
     </head>
@@ -44,9 +68,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="ModulOverview.html">Modulübersicht</a></li>
+                        <li class="nav-item"><a class="nav-link" href="modulübersicht.html">Modulübersicht</a></li>
                         <li class="nav-item"><a class="nav-link" href="intranet.html">Intranet</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Bib.html">Bibliothek</a></li>
+                        <li class="nav-item"><a class="nav-link" href="bib.html">Bibliothek</a></li>
                         <li class="nav-item"><a class="nav-link" href="servicedesk.html">Servicedesk</a></li>
                         <li class="nav-item"><a class="nav-link" href="einstellungen.html">Einstellungen</a></li>
                     </ul>
@@ -55,12 +79,12 @@
         </nav>
         <!-- Masthead-->
             <section class="page-section bg-primary">
-                <div class="container px-4 px-lg-5">
+                <div class="container px-3 px-lg-4">
                     <div class="row justify-content-center">
-                        <div class="col-lg-8 text-center">
-                            <h2 class="text-white mt-0">Abgeschlossene Module</h2>
+                        <div class="col-lg-5 text-center">
+                            <h4 class="text-white mt-0">Service Desk</h4>
                             <hr class="divider light my-4">
-                            <h5 class="text-white mt-0">Student</h5>
+                            <h6 class="text-white mt-0">Student</h6>
                         </div>
                     </div>
                 </div>
@@ -68,47 +92,65 @@
         <!-- Events-->
         <section class="page-section" id="events">
             <div class="container px-4 px-lg-5">
-              <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                  <div class="card">
-                    <img src="inc/unterlagen.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Semester Wochen</h5>
-                      <p class="card-text">Hier finden Sie alle Slide Decks sowie alle verlinkten Unterlagen pro Semesterwoche</p>
-                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="inc/LN2.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Leistungsnachweise</h5>
-                      <p class="card-text">Hier befinden sich alle Informationen zu den LN sowie Ihre Abgaben</p>
-                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a short card.</p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="inc/Bewertung2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <br>
-                      <h5 class="card-title">Abschluss:</h5>
-                      <p class="card-text">LN: "Grade"</p> 
-                      <p class="card-text">Modulabschluss Prüfung: "Grade"</p>
-                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                          <img src="..." class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                          <img src="..." class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </section>
-          
-                          
-                
             </div>
         </section>
+        
        <!--Log out-->
             <section class="page-section text-white" id="" style="background-color: #7d7168;">
                 <div class="container px-4 px-lg-5 text-center">
@@ -147,6 +189,7 @@
         <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/dataTables.bootstrap5.min.js"></script>
         <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
         
     </body>
 </html>
