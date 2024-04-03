@@ -84,7 +84,6 @@
                         <div class="col-lg-5 text-center">
                             <h4 class="text-white mt-0">Einstellungen</h4>
                             <hr class="divider light my-4">
-                            <h6 class="text-white mt-0">Student</h6>
                         </div>
                     </div>
                 </div>
@@ -92,9 +91,158 @@
         <!-- Events-->
         <section class="page-section" id="events">
             <div class="container px-4 px-lg-5">
-                
+                <h3 class="text-center mt-0">Max Mustermann</h3>
+                <h6 class="text-center mt-0">Rolle: <strong>Student</strong></h6>
+                <hr>
+                <div class="table-responsive">
+                    <table class="table no-wrap profil-table mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="border-0 font-medium pl-4">Kontakt Informationen</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="field">E-Mail</td>
+                                <td class="value">mustmax@students.zhaw.ch</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="field">Passwort</td>
+                                <td class="value">xxxxx</td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#editpassword"><i class="bi bi-pencil"></i></button>
+                                </td>
+                            </tr>
+                                                <!-- Password-Edit-Modal-->
+                                                    <div class="modal fade" id="editpassword" tabindex="-1" role="dialog">
+                                                        <form action="" method="post">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                                                        <h4 class="modal-title" id="info">Passwort ändern</h4>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <center>
+                                                                        <h3 class="media-heading"></h3>
+                                                                        <span><strong>Neues Passwort setzen </strong></span>
+                                                                        <br>
+                                                                    </center>
+                                                                        <hr>
+                                                                        <center>
+                                                                            <input type="hidden" name="mid" id="mid" value=""/>
+                                                                            <div value="">
+                                                                                <label for="password" class="form-label">Neues Passwort</label>
+                                                                                <input type="password" name="new_password" class="form-control" placeholder="xxx1234xxx" value="">
+                                                                                <span class="help-block"><?php echo $new_password_err; ?></span>
+                                                                            </div>
+                                                                            <div value="">
+                                                                                <label for="password" class="form-label">Neues Passwort bestätigen</label>
+                                                                                <input type="password" name="confirm_password" class="form-control" placeholder="xxx1234xxx">
+                                                                                <span class="help-block"></span>
+                                                                            </div>
+                                                                        </center>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <center>
+                                                                            <input type="submit" name="submit" class="btn btn-outline-success btn-circle btn-circle ml-2" value="ändern">
+                                                                            <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="bi-x"></i></button>
+                                                                        </center>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                            <tr>
+                                <td class="field">Adresse</td>
+                                <td class="value">
+                                    <p>
+                                        Musterstrasse 18
+                                        <br>
+                                        8888 Zürich
+                                    </p>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#editadress"><i class="bi bi-pencil"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+                                                <!-- Address-Edit-Modal-->
+                                                    <div class="modal fade" id="editadress" tabindex="-1" role="dialog" aria-labelledby="editaddress" aria-hidden="true">
+                                                        <form action="" method="post">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                                                        <h4 class="modal-title" id="info">Adresse ändern</h4>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <center>
+                                                                        <h3 class="media-heading"></h3>
+                                                                        <span><strong>Aktuelle Adresse: </strong></span>
+                                                                        <br>
+                                                                            <span class="label label-warning"></span>
+                                                                        <br>
+                                                                        <span class="label label-warning"></span>
+                                                                        <br>
+                                                                        <span class="label label-warning"></span>
+                                                                    </center>
+                                                                        <hr>
+                                                                        <center>
+                                                                            <input type="hidden" name="memberid" id="memberid" value=""/>
+                                                                        <label for="note" class="form-label">Strassenname</label>
+                                                                        <input type="text" name="street" class="form-control" id="street" placeholder="xstrasse" value="" required="">
+                                                                        <label for="note" class="form-label">Hausnumber</label>
+                                                                        <input type="text" name="housenumber" class="form-control" id="housenumber" placeholder="11xx" value="" required="">
+                                                                        <label for="note" class="form-label">PLZ</label>
+                                                                        <input type="number" name="plz" class="form-control" id="plz" placeholder="1234" value="" required="">
+                                                                        <label for="note" class="form-label">Ort</label>
+                                                                        <input type="text" name="city" class="form-control" id="city" placeholder="xxxzürich" value="" required="">
+                                                                        </center>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <center>
+                                                                            <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="bi-x"></i></button>
+                                                                            <button type="submit" class="btn btn-outline-warning" name="submit"><i class="bi bi-pencil"></i></button>
+                                                                        </center>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+            <br>
+            <div class="table-responsive">
+               <table class="table no-wrap profil-table mb-0">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="border-0 font-medium pl-4">Persönliche Informationen</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="field">Geburtsdatum</td>
+                            <td class="value"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="field">Allergien</td>
+                            <td class="value"></td>
+                            <td>
+                                <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#editemail"><i class="bi bi-pencil"></i></button>
+                            </td>
+                        </tr>>
+                    </tbody>
+                </table> 
             </div>
-        </section>
+        </div>
+    </section>
         
        <!--Log out-->
             <section class="page-section text-white" id="" style="background-color: #7d7168;">
