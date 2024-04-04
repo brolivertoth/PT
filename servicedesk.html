@@ -60,7 +60,7 @@
                 <center>
                 <form class="d-flex" action="/suchergebnis" method="get">
                     <input class="form-control me-2" type="search" placeholder="Suchen..." aria-label="Search" name="suche">
-                    <button class="btn btn-light " type="submit">Suchen</button>
+                    <button class="btn btn-light " type="submit"><a href="SearchDone.html" style="color: black;">Suchen</a></button>
                 </form>
                 </center>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,68 +89,56 @@
                     </div>
                 </div>
             </section>
+
         <!-- Events-->
         <section class="page-section" id="events">
             <div class="container px-4 px-lg-5">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a short card.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                          <img src="..." class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          </div>
+                <form>
+                    <div class="form-row">
+                        <div class="col-md-7 mb-3">
+                            <label for="exampleFormControlInput1">Problem Summary</label>
+                            <input type="text" class="form-control" placeholder="Problem Summary">
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card h-100">
-                          <img src="..." class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          </div>
+                    <div class="col-md-7 mb-3">
+                        <label for="exampleFormControlTextarea1">Problem Description</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                            <div class="form-group">
+                                <label for="typeOfProblem">Type of Problem</label>
+                                <select multiple class="form-control" id="typeOfProblem">
+                                <option>General Question</option>
+                                <option>IT Related</option>
+                                <option>Payment</option>
+                                <option>Class Related</option>
+                                <option>Student Support</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    
+                    <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                            <label for="emailAdress">Email address</label>
+                            <input type="email" class="form-control" id="emailAdress" placeholder="name@example.com">
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="phoneNumber">Phone</label>
+                            <input type="email" class="form-control" id="phoneNumber" placeholder="+41796757467">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" class="btn btn-primary"><a href="servicedesk-submitted.html" style="color: black;">Submit</a></button>
+                        <button type="submit" class="btn btn-primary"><a href="servicedesk-submitted.html" style="color: black;">Check Tickets</a></button>
+                    </div>
+                    
+                </form>
             </div>
         </section>
-        
+
        <!--Log out-->
             <section class="page-section text-white" id="" style="background-color: #7d7168;">
                 <div class="container px-4 px-lg-5 text-center">

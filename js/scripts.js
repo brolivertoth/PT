@@ -6,7 +6,8 @@
 //
 // Scripts
 // 
-
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -56,5 +57,12 @@ window.addEventListener('DOMContentLoaded', event => {
         elements: '#portfolio a.portfolio-box'
     });
     
-
 });
+$(function () {
+    $('.example-popover').popover({
+      container: 'body'
+    })
+  })
+$('.popover-dismiss').popover({
+    trigger: 'focus'
+  })
